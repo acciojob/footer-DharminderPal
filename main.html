@@ -42,12 +42,6 @@
       flex-wrap: wrap;
     }
 
-    .footer-section {
-      flex: 1;
-      min-width: 200px;
-      padding: 20px;
-    }
-
     .footer-section h3 {
       font-size: 1.2rem;
       margin-bottom: 15px;
@@ -110,6 +104,18 @@
     .bottom-footer .privacy-policy a:hover {
       color: #f4a261;
     }
+    .footer-section {
+  display: block; /* Default to block */
+  padding: 20px;
+  min-width: 200px;
+}
+
+@media (min-width: 768px) {
+  .footer-section {
+    display: flex; /* Use flex for larger screens */
+  }
+}
+
   </style>
 </head>
 <body>
